@@ -1,7 +1,8 @@
-/* * {
-  margin: 0;
+* {
+  box-sizing: border-box;
   padding: 0;
-} */
+  margin: 0;
+}
 
 #root {
   height: 100vh;
@@ -69,4 +70,29 @@ button {
 
 a:hover {
   color: #f08040;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-top: 10px;
+}
+
+.blog {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 9;
+  padding: 10px;
+}
+
+.sidebar {
+  flex: 3;
+  padding: 10px;
 }
