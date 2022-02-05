@@ -1,13 +1,72 @@
-body {
+/* * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+} */
+
+#root {
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 10px;
+  flex: auto;
+  height: calc(100vh -50px -50px);
+}
+
+.header {
+  padding: 10px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #404040 solid;
+}
+
+a {
+  color: #305090;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-top: 1px #404040 solid;
+}
+
+.light {
+  background-color: #e0e0e0;
+  color: #202020;
+}
+
+.dark {
+  background-color: #202020;
+  color: #e0e0e0;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.dark button {
+  background-color: #202020;
+  color: #e0e0e0;
+}
+
+.dark a {
+  color: #40c0f0;
+}
+
+a:hover {
+  color: #f08040;
 }
