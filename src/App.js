@@ -16,6 +16,12 @@ function App() {
             <Route path='/post/:postId'>
               <PostPage></PostPage>
             </Route>
+            <Route path='/user/:userId'>
+              <HomePage></HomePage>
+            </Route>
+            <Route path='/search/:query?'>
+              <HomePage></HomePage>
+            </Route>
             <Route path='/'>
               <HomePage></HomePage>
             </Route>
