@@ -103,3 +103,28 @@ button {
   padding: 5px;
   margin-left: 5px;
 }
+
+.form {
+  max-width: 800px;
+}
+
+.formItem {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.formItem > label {
+  flex: 1 1 100px;
+}
+
+.formItem > input,
+.formItem > textarea,
+.formItem > span,
+.formItem > button {
+  flex: 3 1 300px;
+}
+
+.error {
+  color: red;
+}
